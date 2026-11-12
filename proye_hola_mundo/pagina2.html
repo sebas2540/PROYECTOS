@@ -1,0 +1,276 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hoja de Vida | Israel Juma</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: #eef1f5;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .contenedor {
+            max-width: 1000px;
+            margin: 40px auto;
+            display: grid;
+            grid-template-columns: 300px 1fr;
+            background: white;
+            box-shadow: 0 5px 25px rgba(0,0,0,0.1);
+        }
+
+        /* PANEL IZQUIERDO */
+        .lateral {
+            background: #172b4d;
+            color: white;
+            padding: 35px 25px;
+        }
+
+        .foto {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            display: block;
+            margin: 0 auto 20px;
+            border: 4px solid white;
+        }
+
+        .lateral h2 {
+            font-size: 20px;
+            margin: 25px 0 12px;
+            border-bottom: 2px solid #4da3ff;
+            padding-bottom: 7px;
+        }
+
+        .lateral p, .lateral li {
+            font-size: 14px;
+            margin-bottom: 10px;
+            overflow-wrap: anywhere;
+        }
+
+        .lateral ul {
+            padding-left: 20px;
+        }
+
+        /* PANEL DERECHO */
+        .contenido {
+            padding: 45px 40px;
+        }
+
+        .encabezado {
+            border-bottom: 3px solid #172b4d;
+            padding-bottom: 20px;
+            margin-bottom: 25px;
+        }
+
+        .encabezado h1 {
+            font-size: 34px;
+            color: #172b4d;
+        }
+
+        .encabezado h3 {
+            color: #4da3ff;
+            font-weight: normal;
+            letter-spacing: 2px;
+        }
+
+        section {
+            margin-bottom: 28px;
+        }
+
+        section h2 {
+            color: #172b4d;
+            font-size: 21px;
+            border-bottom: 2px solid #ddd;
+            padding-bottom: 8px;
+            margin-bottom: 15px;
+        }
+
+        .item {
+            margin-bottom: 18px;
+        }
+
+        .item h3 {
+            font-size: 16px;
+            color: #333;
+        }
+
+        .fecha {
+            color: #4da3ff;
+            font-size: 13px;
+            font-weight: bold;
+        }
+
+        .item p {
+            font-size: 14px;
+            color: #555;
+        }
+
+        .boton {
+            display: inline-block;
+            background: #172b4d;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+
+        .boton:hover {
+            background: #4da3ff;
+        }
+
+        @media (max-width: 700px) {
+            .contenedor {
+                grid-template-columns: 1fr;
+                margin: 10px;
+            }
+
+            .contenido {
+                padding: 30px 22px;
+            }
+
+            .encabezado h1 {
+                font-size: 27px;
+            }
+        }
+
+        @media print {
+            body {
+                background: white;
+            }
+
+            .contenedor {
+                margin: 0;
+                box-shadow: none;
+            }
+
+            .boton {
+                display: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="contenedor">
+
+        <!-- INFORMACIÓN LATERAL -->
+        <aside class="lateral">
+
+            <img src="yo.png" 
+                 alt="Fotografía personal" class="foto">
+
+            <h2>Contacto</h2>
+            <p>📍 Ibarra, Ecuador</p>
+            <p>📞 099 000 0000</p>
+            <p>✉️ correo@ejemplo.com</p>
+
+            <h2>Habilidades</h2>
+            <ul>
+                <li>HTML y CSS</li>
+                <li>Java</li>
+                <li>Python básico</li>
+                <li>Base de datos SQL</li>
+                <li>Trabajo en equipo</li>
+                <li>Resolución de problemas</li>
+            </ul>
+
+            <h2>Idiomas</h2>
+            <ul>
+                <li>Español: Nativo</li>
+                <li>Inglés: Básico</li>
+            </ul>
+
+        </aside>
+
+        <!-- CONTENIDO PRINCIPAL -->
+        <main class="contenido">
+
+            <header class="encabezado">
+                <h1>Israel Juma</h1>
+                <h3>ESTUDIANTE DE DESARROLLO DE SOFTWARE</h3>
+            </header>
+
+            <section>
+                <h2>Perfil Profesional</h2>
+                <p>
+                    Soy estudiante de Desarrollo de Software, interesado
+                    en la tecnología, la programación y el desarrollo de
+                    aplicaciones. Me considero una persona responsable,
+                    creativa y con disposición para aprender nuevas
+                    habilidades y afrontar nuevos desafíos.
+                </p>
+            </section>
+
+            <section>
+                <h2>Formación Académica</h2>
+
+                <div class="item">
+                    <h3>Desarrollo de Software</h3>
+                    <span class="fecha">2026 - Actualidad</span>
+                    <p>Instituto Tecnológico Superior ITSI</p>
+                </div>
+
+                <div class="item">
+                    <h3>Bachillerato</h3>
+                    <span class="fecha">Años de estudio</span>
+                    <p>Nombre de la institución educativa</p>
+                </div>
+            </section>
+
+            <section>
+                <h2>Experiencia y Proyectos</h2>
+
+                <div class="item">
+                    <h3>Desarrollo de páginas web</h3>
+                    <span class="fecha">Proyecto personal</span>
+                    <p>
+                        Creación de páginas web utilizando HTML,
+                        CSS y JavaScript, con diseños adaptables
+                        y funcionalidades interactivas.
+                    </p>
+                </div>
+
+                <div class="item">
+                    <h3>Desarrollo de proyectos de software</h3>
+                    <span class="fecha">Proyecto académico</span>
+                    <p>
+                        Elaboración de programas y sistemas básicos
+                        utilizando lenguajes de programación y
+                        bases de datos.
+                    </p>
+                </div>
+            </section>
+
+            <section>
+                <h2>Objetivo Profesional</h2>
+                <p>
+                    Continuar desarrollando mis conocimientos en
+                    programación y tecnología, adquiriendo experiencia
+                    y aportando soluciones mediante herramientas
+                    informáticas.
+                </p>
+            </section>
+
+            <button class="boton" onclick="window.print()">
+                Descargar / Imprimir CV
+            </button>
+
+        </main>
+    </div>
+
+</body>
+</html>
