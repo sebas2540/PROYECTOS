@@ -1,0 +1,29 @@
+/* Selector universal: reinicia tipografía */
+
+
+/* Selector de etiqueta */
+body {
+    background-color: #eef2f3;
+}
+
+/* Selector de ID (único por página) */
+#pie-pagina {
+    text-align: right;
+    font-style: italic;
+    color:#6b7280
+}
+
+/* Selector de Clase (reutilizable) */
+.exito {
+    background-color:#dcfce7;
+    color: #14532d;
+}
+.advertencia {
+    background-color:#fef9c3;
+    color: #713f12;
+}
+.error {
+    background-color:#991b1b;
+    color: #ffffff;
+    font-weight: bold;
+}

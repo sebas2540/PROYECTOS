@@ -1,0 +1,40 @@
+/* Selector universal: reinicia tipografía */
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Selector de etiqueta */
+body {
+    background-color: #4bc4e252;
+    color: #333333;
+}
+H1{
+    text-align: center;
+    font-family: Georgia, serif;
+    color:#1a365d
+}
+H3{
+    text-align: center;
+    color: #0d9488;
+    text-decoration: underline;
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+/* Selector de ID (único por página) */
+#titulo-principal {
+    color: #1a5276;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+/* Selector de Clase (reutilizable) */
+.destacado {
+    background-color: #fcf3cf;
+    color: #7d6608;
+    padding: 10px;
+    border-left: 4px solid #f1c40f;
+}
